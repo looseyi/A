@@ -7,12 +7,14 @@
 //
 
 #import "SBAppDelegate.h"
+@import A;
 
 @implementation SBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    Test *file = [[Test alloc] init];
     return YES;
 }
 

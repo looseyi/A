@@ -30,13 +30,16 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'A/Classes/**/*'
+
+  s.source_files = 'A/Classes/**/*', 'A/dependency/*.h'
   
   # s.resource_bundles = {
   #   'A' => ['A/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.private_header_files = 'A/dependency/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.library = 'z'
+
+    s.vendored_library = 'A/dependency/libNVHTarGzip.a'
 end

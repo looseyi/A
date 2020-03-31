@@ -1,0 +1,28 @@
+{
+  "name": "A",
+  "version": "0.1.0",
+  "summary": "A short description of A.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/looseyi/A",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "looseyi": "liugc@xueqiu.com"
+  },
+  "source": {
+    "git": "https://github.com/looseyi/A.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": [
+    "A/Classes/**/*",
+    "A/dependency/*.h"
+  ],
+  "private_header_files": "A/dependency/*.h",
+  "libraries": "z",
+  "vendored_libraries": "A/dependency/libNVHTarGzip.a"
+}
